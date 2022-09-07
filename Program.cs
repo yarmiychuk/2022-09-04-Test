@@ -18,18 +18,18 @@ string[] CreateArray()
 
 int GetNewSize(string[] array)
 {
-    int size = 0;
+    int newSize = 0;
 
     for (int i = 0; i < array.Length; i++)
-        if (array[i].Length <= 3) size++;
+        if (array[i].Length <= 3) newSize++;
     
-    return size;
+    return newSize;
 }
 
 string[] CreateNewArray(string[] existArray)
 {
-    int size = GetNewSize(existArray);
-    string[] newArray = new string[size];
+    int newSize = GetNewSize(existArray);
+    string[] newArray = new string[newSize];
     int index = 0;
 
     for (int i = 0; i < existArray.Length; i++)
