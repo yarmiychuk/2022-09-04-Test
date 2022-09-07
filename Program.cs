@@ -9,10 +9,10 @@ string[] CreateArray()
 {
     int size = rnd.Next(3, 10);
     string[] array = new string[size];
+    
     for (int i = 0; i < size; i++)
-    {
         array[i] = Convert.ToString(rnd.Next(0, 10000));
-    }
+    
     return array;
 }
 
@@ -50,7 +50,7 @@ void ShowArray(string[] array)
         if (i < array.Length - 1)
             Console.Write(", ");
     }
-    
+
     if (array.Length > 0)
         Console.WriteLine();
 }
