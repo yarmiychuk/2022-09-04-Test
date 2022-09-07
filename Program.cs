@@ -50,7 +50,9 @@ void ShowArray(string[] array)
         if (i < array.Length - 1)
             Console.Write(", ");
     }
-    Console.WriteLine();
+    
+    if (array.Length > 0)
+        Console.WriteLine();
 }
 
 string[] array = CreateArray();
